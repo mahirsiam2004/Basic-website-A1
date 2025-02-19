@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -15,12 +15,12 @@ body {
 
 /* Navbar */
 .head {
-    position: fixed;  
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: white; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@ body {
 
 .logo:hover {
     transform: rotate(-5deg) scale(1.1);
-    background: linear-gradient(to right, #764BA2,#667EEA);
+    background: linear-gradient(to right, #764BA2, #667EEA);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -60,9 +60,10 @@ body {
 
 /* Main Section with Fade-in Effect */
 .main {
+    padding: 48px;
     background-image: url("assets/Hero-bg.png");
-    background-size: cover;  
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     height: 652px;
     display: flex;
     flex-direction: column;
@@ -75,9 +76,9 @@ body {
 /* Image Bounce-in Effect */
 .image-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 26px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
     opacity: 0;
     animation: bounceIn 1.2s ease-in-out forwards 0.5s;
 }
@@ -122,6 +123,7 @@ body {
     0% {
         transform: scale(1.1) rotate(-2deg) translateY(0px);
     }
+
     100% {
         transform: scale(1.1) rotate(2deg) translateY(5px);
     }
@@ -144,6 +146,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -154,6 +157,7 @@ body {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -165,6 +169,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -176,12 +181,197 @@ body {
         opacity: 0;
         transform: scale(0.5);
     }
+
     60% {
         opacity: 1;
         transform: scale(1.1);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* second page  */
+
+/* Second Page */
+.second-page {
+    margin: 80px auto;
+    padding: 60px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    max-width: 1100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.second-page h1 {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add animation to the "??" */
+.animated-question {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    animation: colorChange 1.5s infinite alternate, scaleEffect 1.5s infinite alternate, blinkEffect 1.5s infinite alternate;
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0% { color: #764BA2; }  
+    50% { color: #667EEA; } 
+    100% { color: #ff5733; }
+}
+
+/* Scale effect */
+@keyframes scaleEffect {
+    0% { transform: scale(1); }  
+    50% { transform: scale(1.2); }  
+    100% { transform: scale(1); }
+}
+
+/* Blink effect */
+@keyframes blinkEffect {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+
+/* Paragraph */
+.cnt {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Box Layout */
+.first-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Content */
+.left-contant {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-contant h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+}
+
+.left-contant p {
+    padding-top: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button */
+.left-contant button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background: #764BA2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.left-contant button:hover {
+    background: #667EEA;
+    transform: scale(1.05);
+}
+
+/* Right Content (Image) */
+.right-contant {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-contant img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Second Box Layout (Image on Left, Text on Right) */
+.second-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+}
+
+/* Left Content (Image) */
+.second-box .left-contant-box-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.second-box .left-contant-box-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Content (Text) */
+.second-box .right-contant-box-2 {
+    flex: 1;
+    padding: 20px;
+}
+
+.second-box .right-contant-box-2 h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+}
+
+.second-box .right-contant-box-2 p {
+    padding-top: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button */
+.second-box .right-contant-box-2 button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background: #764BA2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.second-box .right-contant-box-2 button:hover {
+    background: #667EEA;
+    transform: scale(1.05);
 }
