@@ -26,16 +26,21 @@ body {
     align-items: center;
     padding: 15px 50px;
     z-index: 1000;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 .logo {
     font-size: 28px;
     font-weight: 800;
     transition: 0.3s ease;
+    color: black;
 }
 
 .logo:hover {
-    transform: scale(1.2);
+    transform: rotate(-5deg) scale(1.1);
+    background: linear-gradient(to right, #764BA2,#667EEA);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .btn {
@@ -49,40 +54,134 @@ body {
 .btn:hover {
     background: black;
     color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hero Section */
-.hero {
-    position: relative; /* Ensures top positioning works */
-    text-align: center;
-    top: 272px; /* Moves hero section down */
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: bold;
-    /* color: #333; */
-    color: black;
-}
-
-/* Background Section */
-.work {
+/* Main Section with Fade-in Effect */
+.main {
     background-image: url("assets/Hero-bg.png");
-    background-size: cover;  /* Ensures full coverage */
-    background-position: center; /* Centers the image */
+    background-size: cover;  
+    background-position: center; 
     height: 652px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Image Centering */
+/* Image Bounce-in Effect */
 .image-container {
-    position: relative; /* Needed for top positioning */
-    top: 157px;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 26px; 
+    opacity: 0;
+    animation: bounceIn 1.2s ease-in-out forwards 0.5s;
 }
 
 .images {
     height: 240px;
     width: 240px;
+}
+
+/* Hero Text Slide-Up Effect */
+.hero {
+    text-align: center;
+    margin-top: 32px;
+    color: black;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s ease-in-out forwards 1s;
+}
+
+/* Hero Text Hover Animation */
+/* Hero Text Default */
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Cool Hover Effect */
+.hero h1:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: black;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    animation: wave 1.2s infinite ease-in-out alternate;
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0% {
+        transform: scale(1.1) rotate(-2deg) translateY(0px);
+    }
+    100% {
+        transform: scale(1.1) rotate(2deg) translateY(5px);
+    }
+}
+
+
+
+/* Paragraph Fade-in */
+.paragrap {
+    max-width: 800px;
+    text-align: center;
+    padding: 24px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 1.5s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
