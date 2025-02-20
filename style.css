@@ -84,6 +84,7 @@ body {
 }
 
 .images {
+    margin-top: 30px;
     height: 240px;
     width: 240px;
 }
@@ -99,7 +100,7 @@ body {
 }
 
 /* Hero Text Hover Animation */
-/* Hero Text Default */
+
 .hero h1 {
     font-size: 48px;
     font-weight: 800;
@@ -452,7 +453,10 @@ body {
 
 @media (max-width: 480px) {
 
-
+    .images {
+        height: 150px;
+        width: 150px;
+    }
     .hero h1 {
         font-size: 28px;
     }
@@ -496,7 +500,7 @@ body {
     .left-contant, .right-contant-box-2 {
         flex: none;
         text-align: center;
-        order: 2; /* Move text below image */
+        order: 2; 
     }
 
     .left-contant button, .second-box .right-contant-box-2 button {
@@ -524,14 +528,14 @@ body {
 /* -------------------------- */
 /* Basic Footer Styles */
 .footer {
-    background: linear-gradient(to right, #667EEA, #764BA2); /* Gradient background */
+    background: linear-gradient(to right, #667EEA, #764BA2); 
     color: white;
-    padding: 40px 20px; /* Increase padding for more space */
+    padding: 40px 20px;
     text-align: center;
     font-family: 'Azeret Mono', sans-serif;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
-    border-radius: 20px; /* Rounded corners */
-    margin: 40px 0; /* Add margin to separate from content */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px; 
+    margin: 40px 0; 
     position: relative; /* For added flexibility */
     z-index: 10;
 }
@@ -541,7 +545,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Increase gap between photo and text */
+    gap: 15px; 
     animation: fadeIn 1.5s ease-out;
 }
 
@@ -549,27 +553,27 @@ body {
 .creator-photo {
     border-radius: 50%;
     overflow: hidden;
-    width: 100px; /* Slightly larger photo */
+    width: 100px; 
     height: 100px;
-    margin-bottom: 15px; /* Increase margin */
-    border: 4px solid #ffffff; /* Add a white border around the photo */
+    margin-bottom: 15px; 
+    border: 4px solid #ffffff; 
 }
 
 .creator-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .creator-img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow when hovered */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 
 /* Creator Text Styling */
 .creator-text {
-    font-size: 1.2rem; /* Increase text size */
+    font-size: 1.2rem; 
     font-weight: 600;
     color: #ffffff;
     animation: fadeInUp 2s ease-out;
@@ -593,15 +597,15 @@ body {
 .social-link {
     text-decoration: none;
     color: #64b5f6;
-    font-size: 1.3rem; /* Increase font size for social links */
+    font-size: 1.3rem; 
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
-    margin: 5px 15px; /* More space between icons */
+    margin: 5px 15px; 
 }
 
 .social-link:hover {
     color: black;
-    transform: scale(1.2); /* Make the link slightly bigger on hover */
+    transform: scale(1.2); 
 }
 
 /* Keyframe Animations */
