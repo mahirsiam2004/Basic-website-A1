@@ -400,7 +400,10 @@ body {
     .head {
         padding: 15px 20px;
     }
-
+    .images {
+        height: 170px;
+        width: 170px;
+    }
     .main {
         padding: 30px;
     }
@@ -447,6 +450,8 @@ body {
 }
 
 @media (max-width: 480px) {
+
+
     .hero h1 {
         font-size: 28px;
     }
@@ -512,3 +517,5 @@ body {
         text-align: center;
     }
 }
+
+/* -------------------------- */
