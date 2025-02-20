@@ -193,6 +193,25 @@ body {
     }
 }
 
+.btn-main {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-main:hover {
+    background: linear-gradient(to right, #764BA2, #667EEA);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+
+
 /* second page  */
 
 /* Second Page */
@@ -374,4 +393,122 @@ body {
 .second-box .right-contant-box-2 button:hover {
     background: #667EEA;
     transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .head {
+        padding: 15px 20px;
+    }
+
+    .main {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .paragrap {
+        font-size: 14px;
+    }
+
+    .first-box, .second-box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .left-contant, .right-contant {
+        flex: none;
+        text-align: center;
+    }
+
+    .second-page {
+        padding: 30px;
+    }
+
+    .second-page h1 {
+        font-size: 30px;
+    }
+
+    .second-box .right-contant-box-2 h2 {
+        font-size: 24px;
+    }
+
+    .second-box .right-contant-box-2 p {
+        font-size: 14px;
+    }
+
+    .left-contant button, .second-box .right-contant-box-2 button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .paragrap {
+        font-size: 12px;
+    }
+
+    .second-page h1 {
+        font-size: 26px;
+    }
+
+    .first-box, .second-box {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .left-contant button, .second-box .right-contant-box-2 button {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+    .box button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-box, .second-box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .left-contant, .right-contant-box-2 {
+        flex: none;
+        text-align: center;
+        order: 2; /* Move text below image */
+    }
+
+    .left-contant button, .second-box .right-contant-box-2 button {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-box, .second-box {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .left-contant button, .second-box .right-contant-box-2 button {
+        font-size: 14px;
+        width: auto;
+        text-align: center;
+    }
 }
