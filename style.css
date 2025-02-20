@@ -58,7 +58,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Main Section with Fade-in Effect */
+
 .main {
     padding: 48px;
     background-image: url("assets/Hero-bg.png");
@@ -73,7 +73,7 @@ body {
     animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Image Bounce-in Effect */
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ body {
     width: 240px;
 }
 
-/* Hero Text Slide-Up Effect */
+
 .hero {
     text-align: center;
     margin-top: 32px;
@@ -99,7 +99,7 @@ body {
     animation: slideUp 1s ease-in-out forwards 1s;
 }
 
-/* Hero Text Hover Animation */
+
 
 .hero h1 {
     font-size: 48px;
@@ -111,7 +111,7 @@ body {
     cursor: pointer;
 }
 
-/* Cool Hover Effect */
+
 .hero h1:hover {
     transform: scale(1.1) rotate(-2deg);
     color: black;
@@ -119,7 +119,7 @@ body {
     animation: wave 1.2s infinite ease-in-out alternate;
 }
 
-/* Wave Animation */
+
 @keyframes wave {
     0% {
         transform: scale(1.1) rotate(-2deg) translateY(0px);
@@ -132,7 +132,7 @@ body {
 
 
 
-/* Paragraph Fade-in */
+
 .paragrap {
     max-width: 800px;
     text-align: center;
@@ -142,7 +142,7 @@ body {
     animation: fadeIn 1.5s ease-in-out forwards 1.5s;
 }
 
-/* Animations */
+/* Animation by Mahir */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -215,7 +215,6 @@ body {
 
 /* second page  */
 
-/* Second Page */
 .second-page {
     margin: 80px auto;
     padding: 60px;
@@ -225,7 +224,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
+
 .second-page h1 {
     font-size: 36px;
     font-weight: 800;
@@ -233,7 +232,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Add animation to the "??" */
+
 .animated-question {
     display: inline-block;
     font-size: 36px;
@@ -241,21 +240,21 @@ body {
     animation: colorChange 1.5s infinite alternate, scaleEffect 1.5s infinite alternate, blinkEffect 1.5s infinite alternate;
 }
 
-/* Color change animation */
+
 @keyframes colorChange {
     0% { color: #764BA2; }  
     50% { color: #667EEA; } 
     100% { color: #ff5733; }
 }
 
-/* Scale effect */
+
 @keyframes scaleEffect {
     0% { transform: scale(1); }  
     50% { transform: scale(1.2); }  
     100% { transform: scale(1); }
 }
 
-/* Blink effect */
+
 @keyframes blinkEffect {
     0% { opacity: 1; }
     50% { opacity: 0.6; }
@@ -263,7 +262,7 @@ body {
 }
 
 
-/* Paragraph */
+
 .cnt {
     padding: 20px;
     text-align: center;
@@ -271,7 +270,7 @@ body {
     color: #333;
 }
 
-/* Box Layout */
+
 .first-box {
     margin-top: 40px;
     display: flex;
@@ -284,7 +283,7 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Left Content */
+
 .left-contant {
     flex: 1;
     padding: 20px;
@@ -302,7 +301,7 @@ body {
     color: #555;
 }
 
-/* Button */
+
 .left-contant button {
     margin-top: 20px;
     padding: 12px 24px;
@@ -321,7 +320,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Right Content (Image) */
+
 .right-contant {
     flex: 1;
     display: flex;
@@ -334,7 +333,7 @@ body {
     border-radius: 10px;
 }
 
-/* Second Box Layout (Image on Left, Text on Right) */
+
 .second-box {
     display: flex;
     align-items: center;
@@ -347,7 +346,7 @@ body {
     margin-top: 40px;
 }
 
-/* Left Content (Image) */
+
 .second-box .left-contant-box-2 {
     flex: 1;
     display: flex;
@@ -360,7 +359,7 @@ body {
     border-radius: 10px;
 }
 
-/* Right Content (Text) */
+
 .second-box .right-contant-box-2 {
     flex: 1;
     padding: 20px;
@@ -378,7 +377,6 @@ body {
     color: #555;
 }
 
-/* Button */
 .second-box .right-contant-box-2 button {
     margin-top: 20px;
     padding: 12px 24px;
@@ -397,7 +395,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Media Queries for Responsiveness */
+/* -------------- Baler Media Queries for Responsiveness----------*/
 @media (max-width: 768px) {
     .head {
         padding: 15px 20px;
@@ -525,9 +523,7 @@ body {
 }
 
 /* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* Basic Footer Styles */
+/* Footer  */
 .footer {
     background: linear-gradient(to right, #667EEA, #764BA2); 
     color: white;
@@ -537,11 +533,10 @@ body {
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2); 
     border-radius: 20px; 
     margin: 40px 0; 
-    position: relative; /* For added flexibility */
+    position: relative; 
     z-index: 10;
 }
 
-/* Creator Section Styling */
 .creator {
     display: flex;
     flex-direction: column;
@@ -550,7 +545,6 @@ body {
     animation: fadeIn 1.5s ease-out;
 }
 
-/* Creator's image */
 .creator-photo {
     border-radius: 50%;
     overflow: hidden;
@@ -572,7 +566,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 
-/* Creator Text Styling */
 .creator-text {
     font-size: 1.2rem; 
     font-weight: 600;
@@ -586,7 +579,6 @@ body {
     color: #81c784;
 }
 
-/* Social Media Links Styling */
 .social-text {
     font-size: 1.1rem;
     font-weight: 500;
@@ -609,7 +601,6 @@ body {
     transform: scale(1.2); 
 }
 
-/* Keyframe Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
